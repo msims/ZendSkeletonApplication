@@ -2,6 +2,16 @@
 return array(
     'modules' => array(
         'Application',
+        'ZfcBase',
+        'ZfcUser',
+        'ZfcUserDoctrineORM',
+        'ZfcAdmin',
+        'ZfcUserAdmin',
+        'BjyAuthorize',
+        'DoctrineModule',
+        'DoctrineORMModule',
+        'Album',
+        'SwebContact',
     ),
     'module_listener_options' => array(
         'config_glob_paths'    => array(
