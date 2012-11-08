@@ -22,6 +22,14 @@ return array(
             ),
         ),
     ),
+    'navigation' => array(
+        'application' => array(
+            array(
+                'label' => 'Album',
+                'uri' => '/album'
+            ),
+        ),
+    ),
     'view_manager' => array(
         'template_map' => array(
             'album/album/index'     => __DIR__ . '/../view/album/album/index.phtml',

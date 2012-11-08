@@ -4,7 +4,7 @@ return array(
     'bjyauthorize' => array(
         'default_role' => 'guest',
         'identity_provider' => 'BjyAuthorize\Provider\Identity\ZfcUserDoctrine',
-        'unauthorized_strategy' => 'BjyAuthorize\View\UnauthorizedStrategy',
+        'unauthorized_strategy' => 'Application\View\UnauthorizedStrategy',
         'role_providers' => array(
             'BjyAuthorize\Provider\Role\Doctrine' => array(
                 'table'             => 'user_role',

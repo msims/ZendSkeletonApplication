@@ -52,9 +52,18 @@ return array(
             ),
         ),
     ),
+    'navigation' => array(
+        'application' => array(
+            array(
+                'label' => 'Home',
+                'uri' => '/'
+            ),
+        ),
+    ),
     'service_manager' => array(
         'factories' => array(
             'translator' => 'Zend\I18n\Translator\TranslatorServiceFactory',
+            'application_navigation' => 'Application\Navigation\Service\NavigationFactory',
         ),
     ),
     'translator' => array(

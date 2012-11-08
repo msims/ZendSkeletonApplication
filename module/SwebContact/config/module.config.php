@@ -91,6 +91,14 @@ return array(
             ),
         ),
     ),
+    'navigation' => array(
+        'application' => array(
+            array(
+                'label' => 'Contact',
+                'uri' => '/contact'
+            ),
+        ),
+    ),
     'service_manager' => array(
         'factories' => array(
             'SwebContactCaptcha'       => 'SwebContact\Service\ContactCaptchaFactory',

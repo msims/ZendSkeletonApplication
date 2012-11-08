@@ -33,13 +33,17 @@
           <a class="brand" href="<?php echo $this->url('home') ?>"><?php echo $this->translate('Skeleton Application') ?></a>
           <div class="nav-collapse">
             <ul class="nav">
-                <li class="active"><a href="<?php echo $this->url('home') ?>"><?php echo $this->translate('Home') ?></a></li>
-                <li><a href="<?php echo $this->url('album') ?>"><?php echo $this->translate('Album') ?></a></li>
-                <li><a href="<?php echo $this->url('contact') ?>"><?php echo $this->translate('Contact') ?></a></li>
+
+                <?php echo $this->navigation('application_navigation')
+                ->menu()
+                ->setUlClass('nav')
+                ->setMaxDepth(0)
+                ->setRenderInvisible(false)?>
+
                 <li><?php if($this->zfcUserIdentity()) { ?>
                          <a href="/user/logout">Logout <?php echo $this->zfcUserDisplayName(); ?></a>
                     <?php } else { ?>
-                        <a href="/user/login">Sign in</a>
+                        <a href="/user/login?redirect=/">Sign in</a>
                     <?php } ?></li>
             </ul>
           </div><!--/.nav-collapse -->
