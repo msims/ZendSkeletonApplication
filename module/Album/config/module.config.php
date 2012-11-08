@@ -1,5 +1,5 @@
 <?php
-// module/Album/conﬁg/module.config.php:
+
 namespace Album;
 
 return array(
@@ -11,13 +11,9 @@ return array(
     'router' => array(
         'routes' => array(
             'album' => array(
-                'type'    => 'segment',
+                'type'    => 'Literal',
                 'options' => array(
-                    'route'    => '/album[/:action][/:id]',
-                    'constraints' => array(
-                        'action' => '[a-zA-Z][a-zA-Z0-9_-]*',
-                        'id'     => '[0-9]+',
-                    ),
+                    'route'    => '/album',
                     'defaults' => array(
                         'controller' => 'Album\Controller\Album',
                         'action'     => 'index',
@@ -27,6 +23,9 @@ return array(
         ),
     ),
     'view_manager' => array(
+        'template_map' => array(
+            'album/album/index'     => __DIR__ . '/../view/album/album/index.phtml',
+        ),
         'template_path_stack' => array(
             'album' => __DIR__ . '/../view',
         ),

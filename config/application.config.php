@@ -11,6 +11,7 @@ return array(
         'DoctrineModule',
         'DoctrineORMModule',
         'Album',
+        'AlbumAdmin',
         'SwebContact',
     ),
     'module_listener_options' => array(

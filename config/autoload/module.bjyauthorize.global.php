@@ -39,6 +39,7 @@ return array(
                 array('controller' => 'zfcuser', 'roles' => array()),
                 array('controller' => 'ZfcAdmin\Controller\AdminController', 'roles' => array('admin')),
                 array('controller' => 'zfcuseradmin', 'roles' => array('admin')),
+                array('controller' => 'AlbumAdmin\Controller\Album', 'roles' => array('admin')),
             ),
         ),
     ),
